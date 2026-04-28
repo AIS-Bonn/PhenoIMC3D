@@ -1,0 +1,6 @@
+{
+    "train_cmd": "python /path/to/your/installed/gaussian-splatting/train.py -s ${dataset_path} -m ${model_path} -r 1",
+    "model_weights": "${model_path}/point_cloud/iteration_30000/point_cloud.ply",
+    "render_cmd": "python /path/to/your/installed/gaussian-splatting/render.py -m ${model_path} --skip_test",
+    "img_predictions": "${model_path}/train/ours_30000/renders"
+}

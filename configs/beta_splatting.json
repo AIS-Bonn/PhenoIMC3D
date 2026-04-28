@@ -1,0 +1,6 @@
+{
+    "train_cmd": "python /path/to/your/installed/beta-splatting/train.py -s ${dataset_path} --model_path ${model_path} --resolution 1 --iterations 30000 --disable_viewer",
+    "model_weights": "${model_path}/point_cloud/iteration_30000/point_cloud.ply",
+    "render_cmd": "python /path/to/your/installed/beta-splatting/render.py -m ${model_path} --skip_test",
+    "img_predictions": "${model_path}/train/ours_30000/renders"
+}
